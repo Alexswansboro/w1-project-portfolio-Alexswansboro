@@ -1,0 +1,65 @@
+*{
+box-sizing:boder-box;
+margin:0;
+padding:0;
+max-width:1023px;
+}html{
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+img{
+max-width:100%;
+}
+.header{
+padding: 10px;
+}
+.nav__bar {
+display: flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+align-items:flex-start;
+align-content:center;
+}
+.nav__bar__item{
+list-style-type:none;
+padding: 0 1.25rem;
+order: 1;
+}
+.nav__bar__item a{
+text-decoration: none;   
+}
+.picture__profile__container{
+display: flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+align-items:flex-start;
+align-content:center;
+}
+.image{
+display: block;
+padding:10px;
+border: 3px solid black;
+width:90%; 
+margin-left: auto;
+margin-right: auto;
+}
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.project__links {
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: center;
+}
+.project__links a{
+text-decoration: none;
+padding: 0 1.25rem;
+}
+.garden__site{
+ order: 1;   
+}
+.dog__site{
+order: 2;
+}
