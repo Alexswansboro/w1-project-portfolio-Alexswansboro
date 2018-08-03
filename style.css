@@ -19,13 +19,14 @@ flex-wrap:wrap;
 justify-content:center;
 align-items:flex-start;
 align-content:center;
+padding-bottom: 10px;
 }
 .nav__bar__item{
 list-style-type:none;
 padding: 0 1.25rem;
 order: 1;
 }
-.nav__bar__item a{
+.nav__bar a{
 text-decoration: none;   
 }
 .picture__profile__container{
@@ -44,13 +45,29 @@ width:90%;
 margin-left: auto;
 margin-right: auto;
 }
+.profile__picture{
+    width:60%;
+}
+.social__media{
+display: flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:space-evenly;
+align-items:flex-end;
+align-content:center;
+padding-bottom: 10px;
+}
+.social__media a{
+    text-decoration: none;
+    
+}
 /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 .project__links {
 display: flex;
 flex-direction: row;
 justify-content: center;
 flex-wrap: wrap;
-align-items: flex-start;
+align-items: flex-end;
 align-content: center;
 }
 .project__links a{
@@ -58,7 +75,7 @@ text-decoration: none;
 padding: 0 1.25rem;
 }
 .garden__site{
- order: 1;   
+order: 1;   
 }
 .dog__site{
 order: 2;
