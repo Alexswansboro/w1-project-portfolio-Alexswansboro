@@ -9,8 +9,12 @@ font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 img{
 max-width:100%;
 }
+body{
+background-color:#E5EAE9;
+}
 .header{
 padding: 10px;
+background-color: #41EAD4;
 }
 .nav__bar {
 display: flex;
@@ -19,12 +23,13 @@ flex-wrap:wrap;
 justify-content:center;
 align-items:flex-start;
 align-content:center;
-padding-bottom: 10px;
+background-color:#495867;
+
 }
 .nav__bar__item{
 list-style-type:none;
-padding: 0 1.25rem;
-order: 1;
+padding: .25rem 1.25rem;
+color: #D0FEF5;
 }
 .nav__bar a{
 text-decoration: none;   
@@ -40,26 +45,26 @@ align-content:center;
 .image{
 display: block;
 padding:10px;
-border: 3px solid black;
-width:90%; 
+/* border: 3px solid black; */
+width:60%; 
 margin-left: auto;
 margin-right: auto;
 }
 .profile__picture{
     width:60%;
+    border-radius:50%
 }
 .social__media{
 display: flex;
 flex-direction:row;
 flex-wrap:wrap;
 justify-content:space-evenly;
-align-items:flex-end;
+align-items: flex-end;
 align-content:center;
-padding-bottom: 10px;
+padding: 10px 0;
 }
 .social__media a{
-    text-decoration: none;
-    
+text-decoration: none;
 }
 /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 .project__links {
@@ -74,9 +79,21 @@ align-content: center;
 text-decoration: none;
 padding: 0 1.25rem;
 }
-.garden__site{
-order: 1;   
+.garden__supply__code{
+order:1;
 }
-.dog__site{
+.garden__supply__live{
+order: 2;  
+border-left: 1px solid black;
+}
+.dog__link{
 order: 2;
 }
+.dog__code{
+order:1;
+}
+.dog__live{
+border-left: 1px solid black; 
+order:2;
+}
+
