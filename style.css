@@ -45,8 +45,7 @@ align-content:center;
 .image{
 display: block;
 padding:20px 0px 5px 0px;
-/* border: 3px solid black; */
-width:60%; 
+width:75%; 
 margin-left: auto;
 margin-right: auto;
 }
@@ -100,7 +99,7 @@ order:1;
 }
 .garden__supply__live{
 order: 2;  
-border-left: 1px solid black;
+border-left: .1rem solid #577399;
 }
 .dog__link{
 order: 2;
@@ -109,14 +108,14 @@ order: 2;
 order:1;
 }
 .dog__live{
-border-left: 1px solid black; 
+border-left: .1rem solid #577399; 
 order:2;
 }
 
 
 
 
-/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Projects page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Resume page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 
 
 
@@ -147,24 +146,57 @@ padding:2%;
     padding: .5rem 0;
 }
 
-/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Phones ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
-@media screen and (min-width: 769px) 
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Tablets ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+@media screen and (min-width: 768px) 
   and (max-width: 991px) {
+ .projects{
+    margin-left:0;
+}
 .garden__text__and__pic{
 display: flex;
 flex-direction: row;
 justify-content: center;
 flex-wrap: wrap;
-align-items: flex-end;
+align-items: flex-start;
 align-content: center;
+border-bottom: .1rem solid #577399;
 }
+/* .garden__text__and__pic__big__box{
+    border-bottom: .1rem solid #577399;
+} */
 .garden__image{
-    width:30%;
+    width:45%;
 }
 .garden__info{
-    width:30%;
+    width:45%;
+    padding: 20px 0px 5px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.dog__text__and__pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    border-bottom: .1rem solid #577399;
+    }
+.dog__image{
+    width:45%;
+    }  
+.dog__info{
+    width:45%;
+    padding: 20px 0px 5px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    } 
+.social__media{
+    margin-top: .25rem
+} 
+.header{
+    display:none;
+}
   }
   
   
