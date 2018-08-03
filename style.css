@@ -13,7 +13,8 @@ body{
 background-color:#E5EAE9;
 }
 .header{
-padding-left:5%;
+padding:.5rem 0 .5rem 2.25rem;
+/* margin-left:5%; */
 background-color: #41EAD4;
 }
 .nav__bar {
@@ -27,7 +28,7 @@ background-color:#495867;
 }
 .nav__bar__item{
 list-style-type:none;
-padding: .25rem 1.25rem;
+padding: .5rem 1.25rem;
 color: #D0FEF5;
 }
 .nav__bar a{
@@ -64,7 +65,7 @@ flex-wrap:wrap;
 justify-content:space-evenly;
 align-items: flex-end;
 align-content:center;
-padding: 10px 0;
+padding: .5rem 0;
 background-color:#495867;
 }
 .social__media a{
@@ -76,6 +77,12 @@ color: #D0FEF5;
 .projects{
     margin-left:5%;
 }
+.projects__header{
+    padding:.5rem 0 0 .75rem;
+}
+.project__header{
+    padding:.5rem 0 0 .75rem;
+}
 .project__links {
 display: flex;
 flex-direction: row;
@@ -86,7 +93,7 @@ align-content: center;
 }
 .project__links a{
 text-decoration: none;
-padding: 0 1.25rem;
+padding: .5rem 1.25rem;
 }
 .garden__supply__code{
 order:1;
@@ -119,11 +126,53 @@ border: 3px solid black;
 padding:2%;
 }
 .resume__header{
-    padding-left:5%;   
+    padding-left:5%; 
+    padding-top:.5rem;  
+}
+.resume__intro{
+    padding-bottom: .5rem;
+    border-bottom: .3rem solid #577399;
 }
 .resume__chunk{
-    padding-left:5%;
+    padding:.25rem 0 .25rem 0;
+    list-style-type: none;
 }
 .resume__box{
     padding-left:5%;
+    padding-bottom: .5rem;
+    /* padding-top: .5rem; */
+    border-bottom: .1rem solid #577399;
 }
+.resume__subheader{
+    padding: .5rem 0;
+}
+
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Phones ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+@media screen and (min-width: 769px) 
+  and (max-width: 991px) {
+.garden__text__and__pic{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: flex-end;
+align-content: center;
+}
+.garden__image{
+    width:30%;
+}
+.garden__info{
+    width:30%;
+}
+
+  }
+  
+  
+
+
+  /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Tables ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
+  @media screen and (min-width: 992px) {
+
+
+  } 
