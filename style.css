@@ -18,36 +18,39 @@ padding:.5rem 0 .5rem 2.25rem;
 background-color: #41EAD4;
 }
 .nav__bar {
-display: flex;
-flex-direction:row;
-flex-wrap:wrap;
-justify-content:center;
-align-items:flex-start;
-align-content:center;
-background-color:#495867;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    align-content:center;
+    background-color:#495867;
 }
 .nav__bar__item{
-list-style-type:none;
-padding: .5rem 1.25rem;
-color: #D0FEF5;
+    list-style-type:none;
+    padding: .5rem 1.25rem;
+    color: #D0FEF5;
 }
-.nav__bar a{
-text-decoration: none;   
+/* .nav__bar a{
+    text-decoration: none;   
 }
+.nav__bar a:hover{
+    text-decoration: underline;
+} */
 .picture__profile__container{
-display: flex;
-flex-direction:row;
-flex-wrap:wrap;
-justify-content:center;
-align-items:flex-start;
-align-content:center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    align-content:center;
 }
 .image{
-display: block;
-padding:20px 0px 5px 0px;
-width:75%; 
-margin-left: auto;
-margin-right: auto;
+    display: block;
+    padding:20px 0px 5px 0px;
+    width:75%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 .profile__picture{
     width:75%;
@@ -58,20 +61,23 @@ margin-right: auto;
     margin-bottom:20px;
 }
 .social__media{
-display: flex;
-flex-direction:row;
-flex-wrap:wrap;
-justify-content:space-evenly;
-align-items: flex-end;
-align-content:center;
-padding: .5rem 0;
-background-color:#495867;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items: flex-end;
+    align-content:center;
+    padding: .5rem 0;
+    background-color:#495867;
 }
 .social__media a{
-text-decoration: none;
-color: #D0FEF5;
-
+    text-decoration: none;
+    color: #D0FEF5;
 }
+.icon{
+    font-size: 1em;
+}
+
 /* This is the beginning of Projects page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 .projects{
     margin-left:5%;
@@ -90,8 +96,7 @@ flex-wrap: wrap;
 align-items: flex-end;
 align-content: center;
 }
-.project__links a{
-text-decoration: none;
+.project__link {
 padding: .5rem 1.25rem;
 }
 .garden__supply__code{
@@ -110,6 +115,12 @@ order:1;
 .dog__live{
 border-left: .1rem solid #577399; 
 order:2;
+}
+.gardlink{
+    text-decoration: none;
+}
+.gardlink a:hover{
+    text-decoration: underline;
 }
 
 
@@ -145,7 +156,12 @@ padding:2%;
 .resume__subheader{
     padding: .5rem 0;
 }
-
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline !important;
+}
 /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Tablets ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 @media screen and (min-width: 768px) 
   and (max-width: 991px) {
@@ -197,6 +213,9 @@ border-bottom: .1rem solid #577399;
 .header{
     display:none;
 }
+.icon{
+    font-size: 2em;
+}
   }
   
   
@@ -205,6 +224,14 @@ border-bottom: .1rem solid #577399;
   /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Tables ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 
   @media screen and (min-width: 992px) {
-
-
+.profile__picture{
+    width:40%;
+}
+.picture__profile__container{
+    display:inline-block;
+}
+.about__me__all{
+    display:inline-block;
+    width:40%;
+}
   } 
