@@ -31,12 +31,12 @@ background-color: #41EAD4;
     padding: .5rem 1.25rem;
     color: #D0FEF5;
 }
-/* .nav__bar a{
+.nav__bar a{
     text-decoration: none;   
 }
 .nav__bar a:hover{
     text-decoration: underline;
-} */
+}
 .picture__profile__container{
     display: flex;
     flex-direction:row;
@@ -65,17 +65,25 @@ background-color: #41EAD4;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
-    align-items: flex-end;
+    align-items: center;
     align-content:center;
-    padding: .5rem 0;
+    /* padding: .5rem 0; */
     background-color:#495867;
+}
+.wrapper{
+    min-height: calc(100vh - 100px);
+    margin-top: 1rem;
+}
+.social__media{
+    height: 1rem;
 }
 .social__media a{
     text-decoration: none;
     color: #D0FEF5;
+    height:-.5rem;
 }
 .icon{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* This is the beginning of Projects page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
@@ -101,20 +109,28 @@ padding: .5rem 1.25rem;
 }
 .garden__supply__code{
 order:1;
+text-decoration: none;
+color:black;
 }
 .garden__supply__live{
 order: 2;  
 border-left: .1rem solid #577399;
+text-decoration: none;
+color:black;
 }
 .dog__link{
 order: 2;
 }
 .dog__code{
 order:1;
+text-decoration: none;
+color:black;
 }
 .dog__live{
 border-left: .1rem solid #577399; 
 order:2;
+text-decoration: none;
+color:black;
 }
 .gardlink{
     text-decoration: none;
@@ -132,7 +148,6 @@ order:2;
 
 
 .resume{
-border: 3px solid black;
 padding:2%;
 }
 .resume__header{
@@ -168,6 +183,12 @@ padding:2%;
     .projects{
         margin-left:0;
     }
+    .site__container__garden{
+     margin:1rem  0 4rem 0;   
+    }
+    .site__container__dog{
+        margin:1rem  0 2rem 0;   
+       }
     .garden__text__and__pic{
     display: flex;
     flex-direction: row;
@@ -177,9 +198,85 @@ padding:2%;
     align-content: center;
     border-bottom: .1rem solid #577399;
     }
-    /* .garden__text__and__pic__big__box{
+    .garden__image{
+        width:45%;
+    }
+    .garden__info{
+        width:45%;
+        padding: 20px 0px 5px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dog__text__and__pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
         border-bottom: .1rem solid #577399;
-    } */
+        
+        }
+    .dog__image{
+        width:45%;
+        }  
+    .dog__info{
+        width:45%;
+        padding: 20px 0px 5px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        } 
+    .social__media{
+        margin-top: 1rem;
+        height:2rem;
+    } 
+    .icon{
+        font-size: 2rem;
+    }
+}
+  
+  
+
+
+  /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Desktops ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
+@media screen and (min-width: 992px) {
+    .profile__picture{
+        width:55%;
+        padding:2rem;
+    }
+    .picture__profile__container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-items:center;
+    }
+    .about__me__all{
+        /* display:inline-block; */
+        width:25%;
+        padding:2rem 3rem 2rem 0;
+    }
+    .icon{
+        font-size: 2rem;
+        height:3rem;
+        margin-top:1rem;
+        text-decoration: none;
+        color: #D0FEF5;
+    }
+    .social__media {
+        height:3rem;
+    }
+    .garden__text__and__pic{
+        margin:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        border-bottom: .1rem solid #577399;
+    }
     .garden__image{
         width:45%;
     }
@@ -206,38 +303,9 @@ padding:2%;
         padding: 20px 0px 5px 0px;
         margin-left: auto;
         margin-right: auto;
-        } 
-    .social__media{
-        margin-top: .25rem
-    } 
-    .header{
-        display:none;
-    }
-    .icon{
-        font-size: 2em;
-    }
-}
-  
-  
-
-
-  /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Desktops ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
-
-@media screen and (min-width: 992px) {
-    .profile__picture{
-        width:40%;
-    }
-    .picture__profile__container{
-        display:inline-block;
-    }
-    .about__me__all{
-        display:inline-block;
-        width:40%;
-    }
-    .header{
-        display:none;
-    }
-    .icon{
-        font-size: 3em;
+        }
+    .wrapper{
+        min-height: calc(100vh - 60px);
+        margin-top: 1rem;
     }
 } 
