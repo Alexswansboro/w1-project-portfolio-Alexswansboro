@@ -21,7 +21,7 @@ background-color: #41EAD4;
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:flex-start;
     align-content:center;
     background-color:#495867;
@@ -88,7 +88,7 @@ background-color: #41EAD4;
 
 /* This is the beginning of Projects page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 .projects{
-    margin-left:5%;
+    /* margin-left:5%; */
 }
 .projects__header{
     padding:.5rem 0 0 .75rem;
@@ -241,6 +241,10 @@ padding:2%;
   /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Desktops ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
 
 @media screen and (min-width: 992px) {
+   /* *{
+       max-width:1024px;
+       margin: 0 auto;
+   } */
     .profile__picture{
         width:55%;
         padding:2rem;
@@ -253,7 +257,7 @@ padding:2%;
         align-items:center;
     }
     .about__me__all{
-        /* display:inline-block; */
+    
         width:25%;
         padding:2rem 3rem 2rem 0;
     }
@@ -275,13 +279,13 @@ padding:2%;
         flex-wrap: wrap;
         align-items: flex-start;
         align-content: center;
-        border-bottom: .1rem solid #577399;
     }
     .garden__image{
-        width:45%;
+        width:30%;
+        flex-basis: 1rem auto; 
     }
     .garden__info{
-        width:45%;
+        width:65%;
         padding: 20px 0px 5px 0px;
         margin-left: auto;
         margin-right: auto;
@@ -293,16 +297,17 @@ padding:2%;
         flex-wrap: wrap;
         align-items: flex-start;
         align-content: center;
-        border-bottom: .1rem solid #577399;
         }
     .dog__image{
-        width:45%;
+        width:30%;
+        order:2;
         }  
     .dog__info{
-        width:45%;
+        width:65%;
         padding: 20px 0px 5px 0px;
         margin-left: auto;
         margin-right: auto;
+        order:1;
         }
     .wrapper{
         min-height: calc(100vh - 60px);
