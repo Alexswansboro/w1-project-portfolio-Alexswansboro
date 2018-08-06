@@ -1,0 +1,316 @@
+*{
+box-sizing:boder-box;
+margin:0;
+padding:0;
+/* max-width:1023px; */
+}html{
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+img{
+max-width:100%;
+}
+body{
+background-color:#E5EAE9;
+}
+.header{
+padding:.5rem 0 .5rem 2.25rem;
+/* margin-left:5%; */
+background-color: #41EAD4;
+}
+.nav__bar {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    align-content:center;
+    background-color:#495867;
+}
+.nav__bar__item{
+    list-style-type:none;
+    padding: .5rem 1.25rem;
+    color: #D0FEF5;
+}
+.nav__bar a{
+    text-decoration: none;   
+}
+.nav__bar a:hover{
+    text-decoration: underline;
+}
+.picture__profile__container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    align-content:center;
+}
+.image{
+    display: block;
+    padding:20px 0px 5px 0px;
+    width:75%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile__picture{
+    width:75%;
+    border-radius:50%
+}
+.about__me__all{
+    margin-left:5%;
+    margin-bottom:20px;
+}
+.social__media{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    align-content:center;
+    /* padding: .5rem 0; */
+    background-color:#495867;
+}
+.wrapper{
+    min-height: calc(100vh - 100px);
+    margin-top: 1rem;
+}
+.social__media{
+    height: 1rem;
+}
+.social__media a{
+    text-decoration: none;
+    color: #D0FEF5;
+    height:-.5rem;
+}
+.icon{
+    font-size: 1rem;
+}
+
+/* This is the beginning of Projects page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+.projects{
+    /* margin-left:5%; */
+}
+.projects__header{
+    padding:.5rem 0 0 .75rem;
+}
+.project__header{
+    padding:.5rem 0 0 .75rem;
+}
+.project__links {
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: flex-end;
+align-content: center;
+}
+.project__link {
+padding: .5rem 1.25rem;
+}
+.garden__supply__code{
+order:1;
+text-decoration: none;
+color:black;
+}
+.garden__supply__live{
+order: 2;  
+border-left: .1rem solid #577399;
+text-decoration: none;
+color:black;
+}
+.dog__link{
+order: 2;
+}
+.dog__code{
+order:1;
+text-decoration: none;
+color:black;
+}
+.dog__live{
+border-left: .1rem solid #577399; 
+order:2;
+text-decoration: none;
+color:black;
+}
+.gardlink{
+    text-decoration: none;
+}
+.gardlink a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Resume page ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
+
+
+
+.resume{
+padding:2%;
+}
+.resume__header{
+    padding-left:5%; 
+    padding-top:.5rem;  
+}
+.resume__intro{
+    padding-bottom: .5rem;
+    border-bottom: .3rem solid #577399;
+}
+.resume__chunk{
+    padding:.25rem 0 .25rem 0;
+    list-style-type: none;
+}
+.resume__box{
+    padding-left:5%;
+    padding-bottom: .5rem;
+    /* padding-top: .5rem; */
+    border-bottom: .1rem solid #577399;
+}
+.resume__subheader{
+    padding: .5rem 0;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline !important;
+}
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Tablets ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+@media screen and (min-width: 768px) 
+  and (max-width: 991px) {
+    .projects{
+        margin-left:0;
+    }
+    .site__container__garden{
+     margin:1rem  0 4rem 0;   
+    }
+    .site__container__dog{
+        margin:1rem  0 2rem 0;   
+       }
+    .garden__text__and__pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    border-bottom: .1rem solid #577399;
+    }
+    .garden__image{
+        width:45%;
+    }
+    .garden__info{
+        width:45%;
+        padding: 20px 0px 5px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dog__text__and__pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        border-bottom: .1rem solid #577399;
+        
+        }
+    .dog__image{
+        width:45%;
+        }  
+    .dog__info{
+        width:45%;
+        padding: 20px 0px 5px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        } 
+    .social__media{
+        margin-top: 1rem;
+        height:2rem;
+    } 
+    .icon{
+        font-size: 2rem;
+    }
+}
+  
+  
+
+
+  /* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZThis is the beginning of Media Queries for Desktops ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
+@media screen and (min-width: 992px) {
+   /* *{
+       max-width:1024px;
+       margin: 0 auto;
+   } */
+    .profile__picture{
+        width:55%;
+        padding:2rem;
+    }
+    .picture__profile__container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-items:center;
+    }
+    .about__me__all{
+    
+        width:25%;
+        padding:2rem 3rem 2rem 0;
+    }
+    .icon{
+        font-size: 2rem;
+        height:3rem;
+        margin-top:1rem;
+        text-decoration: none;
+        color: #D0FEF5;
+    }
+    .social__media {
+        height:3rem;
+    }
+    .garden__text__and__pic{
+        margin:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+    }
+    .garden__image{
+        width:30%;
+        flex-basis: 1rem auto; 
+    }
+    .garden__info{
+        width:65%;
+        padding: 20px 0px 5px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dog__text__and__pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        }
+    .dog__image{
+        width:30%;
+        order:2;
+        }  
+    .dog__info{
+        width:65%;
+        padding: 20px 0px 5px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        order:1;
+        }
+    .wrapper{
+        min-height: calc(100vh - 60px);
+        margin-top: 1rem;
+    }
+} 
